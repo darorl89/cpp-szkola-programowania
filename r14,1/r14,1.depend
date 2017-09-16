@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1505567576 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r14,1\main.cpp
+	<iostream>
+	"wine.h"
+
+1505567059 c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r14,1\wine.h
+	<iostream>
+	<valarray>
+
