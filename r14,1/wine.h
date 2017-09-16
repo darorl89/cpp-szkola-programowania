@@ -30,11 +30,10 @@ T1 & Pair<T1,T2>::first() {return a;}
 template<typename T1, typename T2>
 T2 & Pair<T1,T2>::second() {return b;}
 
-typedef std::valarray<int> ArrayInt;
-typedef Pair<ArrayInt,ArrayInt> PairArray;
-
 class Wine
 {
+    typedef std::valarray<int> ArrayInt;
+    typedef Pair<ArrayInt,ArrayInt> PairArray;
     string label;
     int year;
     PairArray pa;
@@ -49,7 +48,7 @@ public:
     void Show() const;
 };
 
-Wine::Wine(const char * l, int y, const int yr[], const int bot[]) : label(l), year(y)
+Wine::Wine(const char * l, int y, const int yr[], const int bot[]) : label(l), year(y), pa(ArrayInt(y),ArrayInt(y))
 {
     for (int i = 0; i < y; ++i)
     {
@@ -58,7 +57,7 @@ Wine::Wine(const char * l, int y, const int yr[], const int bot[]) : label(l), y
     }
 }
 
-Wine::Wine(const char* l , int y ) : label(l), year(y)
+Wine::Wine(const char* l , int y ) : label(l), year(y), pa(ArrayInt(y),ArrayInt(y))
 {
     for (int i = 0; i < year; ++i)
     {
@@ -70,16 +69,12 @@ Wine::Wine(const char* l , int y ) : label(l), year(y)
 void Wine::GetBottles()
 {
     cout << "Podaj dane o winie " << label << " dla " << year << " rocznikow: " << endl;
-    int y;
-    int c;
     for (int i = 0; i < year; ++i)
     {
         cout << "Podaj rocznik: ";
-        cin >> y;
-        pa.first()[i] = y;
+        cin >> pa.first()[i];
         cout << "Podaj liczbe butelek: ";
-        cin >> c;
-        pa.second()[i] = c;
+        cin >> pa.second()[i];
     }
 }
 
@@ -91,12 +86,10 @@ int Wine::Sum() const
 void Wine::Show() const
 {
     cout << "Wino: " << label << endl;
-    cout << "\t \t Rocznik \t Butelki" << endl;
+    cout << "\tRocznik \tButelki" << endl;
     for (int i = 0; i < year; ++i)
     {
-        int o = pa.first()[i];
-        int s = pa.second()[i];
-        cout << o << "\t" << s << endl;
+        cout << "\t" <<pa.first()[i] << " \t \t" << pa.second()[i] << endl;
     }
 }
 

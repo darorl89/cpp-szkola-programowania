@@ -1,9 +1,9 @@
 # depslib dependency file v1.0
-1505571540 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r14,1\main.cpp
+1505572016 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r14,1\main.cpp
 	<iostream>
 	"wine.h"
 
-1505571607 c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r14,1\wine.h
+1505574737 c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r14,1\wine.h
 	<iostream>
 	<valarray>
 	<cstring>
