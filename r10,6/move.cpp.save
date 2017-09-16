@@ -1,0 +1,23 @@
+#include "Move.h"
+
+Move::Move(double a, double b)
+{
+    x = a;
+    y = b;
+}
+Move::showmove() const
+{
+    cout << "Pozycja x: " << x << ", y: " << y << endl;
+}
+Move::add(const Move & m) const;
+{
+    Move newMove;
+    newMove.x = this->x + m.x;
+    newMove.y = this->y + m.y;
+    return newMove;
+}
+void reset(double a = 0, double b = 0)
+{
+    x = a;
+    y = b;
+}

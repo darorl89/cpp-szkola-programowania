@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1502479292 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r6\cp1.cpp
+	<iostream>
+	<cctype>
+
+1502971803 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r6\cp5.cpp
+	<iostream>
+
+1502973902 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r6\cp6.cpp
+	<iostream>
+
+1502997749 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r6\cp7.cpp
+	<iostream>
+
+1502999808 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r6\cp8.cpp
+	<iostream>
+	<fstream>
+	<cstdlib>
+
+1503047770 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r6\cp9.cpp
+	<iostream>
+	<fstream>
+	<cstdlib>
+

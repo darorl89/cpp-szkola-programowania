@@ -1,0 +1,18 @@
+#ifndef BANKBILL_H_INCLUDED
+#define BANKBILL_H_INCLUDED
+#include <iostream>
+class BankBill
+{
+    using std::str
+    string name;
+    string billID;
+    double balance;
+public:
+    BankBill(string s, string bID, double b);
+    void showBill() const;
+    void addBill(double ab);
+    void subtractBill(double ab);
+};
+
+
+#endif // BANKBILL_H_INCLUDED

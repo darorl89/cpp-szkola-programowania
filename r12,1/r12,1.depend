@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1504026017 source:/home/pawel/Desktop/Jezyk c++/r12,1/cow.cpp
+	<cow.h>
+	<cstring>
+	<iostream>
+
+1504026048 source:/home/pawel/Desktop/Jezyk c++/r12,1/main.cpp
+	<iostream>
+	<cow.h>
+

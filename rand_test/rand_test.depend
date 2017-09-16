@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1504161061 source:/home/pawel/Desktop/Jezyk c++/rand_test/main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+

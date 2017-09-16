@@ -1,0 +1,21 @@
+#ifndef SALES_H_INCLUDED
+#define SALES_H_INCLUDED
+
+#include <iostream>
+using std::cout;
+using std::endl;
+using std::cin;
+
+class Sales
+{
+    static const int QUARTERS = 4;
+    double sales[QUARTERS];
+    double average;
+    double max;
+    double min;
+public:
+    Sales(const double * ar[] = {0,0,0,0});
+};
+
+
+#endif // SALES_H_INCLUDED

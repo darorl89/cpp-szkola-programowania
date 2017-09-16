@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1504029009 source:/home/pawel/Desktop/Jezyk c++/r12,3/main.cpp
+	<iostream>
+
+1504030104 source:/home/pawel/Desktop/Jezyk c++/r12,3/stock20.cpp
+	<iostream>
+	<cstring>
+	"stock20.h"
+
+1504029418 /home/pawel/Desktop/Jezyk c++/r12,3/stock20.h
+	<string>
+	<iostream>
+

@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1503758714 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r10,7\main.cpp
+	<iostream>
+	"plorg.h"
+
+1503758722 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r10,7\plorg.cpp
+	"plorg.h"
+
+1503758537 c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r10,7\plorg.h
+	<iostream>
+	<cstring>
+

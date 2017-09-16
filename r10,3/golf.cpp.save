@@ -1,0 +1,5 @@
+#include "golf.h"
+Golf operator=(Golf & g)
+{
+    Golf newg
+}

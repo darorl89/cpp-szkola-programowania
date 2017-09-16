@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1504121248 source:/home/pawel/Desktop/Jezyk c++/r12,6/queue.cpp
+	"queue.h"
+	<cstdlib>
+
+1504121373 /home/pawel/Desktop/Jezyk c++/r12,6/queue.h
+	<iostream>
+	<cstdlib>
+	<ctime>
+
+1504165663 source:/home/pawel/Desktop/Jezyk c++/r12,6/bank (copy).cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	"queue.h"
+

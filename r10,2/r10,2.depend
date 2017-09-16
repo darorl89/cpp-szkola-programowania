@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1503743095 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r10,2\main.cpp
+	<iostream>
+	"person.h"
+
+1503742880 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r10,2\person.cpp
+	"person.h"
+	<cstring>
+
+1503742991 c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r10,2\person.h
+	<cstring>
+	<iostream>
+

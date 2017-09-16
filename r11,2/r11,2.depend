@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1503837894 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r11,2\main.cpp
+	<iostream>
+	<cstdlib>
+	<fstream>
+	<ctime>
+	"vect.h"
+
+1503837989 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r11,2\vect.cpp
+	<cmath>
+	"vect.h"
+
+1503836291 c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r11,2\vect.h
+	<iostream>
+

@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1502028688 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\1\cw3\main.cpp
+	<iostream>
+	<climits>
+	<string>
+	<math.h>
+

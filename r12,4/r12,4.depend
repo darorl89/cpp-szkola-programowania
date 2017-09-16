@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1504096350 source:/home/pawel/Desktop/Jezyk c++/r12,4/main.cpp
+	"stack.h"
+
+1504096529 source:/home/pawel/Desktop/Jezyk c++/r12,4/stack.cpp
+	"stack.h"
+	<iostream>
+
+1504095659 /home/pawel/Desktop/Jezyk c++/r12,4/stack.h
+	<iostream>
+

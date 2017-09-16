@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1503741982 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r10,1\bankbill.cpp
+	"BankBill.h"
+
+1503742854 c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r10,1\bankbill.h
+	<iostream>
+
+1503742590 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r10,1\main.cpp
+	<iostream>
+	"BankBill.h"
+

@@ -1,0 +1,16 @@
+# depslib dependency file v1.0
+1503479715 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r9,3\source\chaff.cpp
+
+1503517746 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r9,3\main.cpp
+	<iostream>
+	<cstring>
+	<new>
+	<ostream>
+	"chaff.h"
+
+1503513645 c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r9,3\chaff.h
+	"chaff.cpp"
+	<cstring>
+
+1503513486 c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r9,3\chaff.cpp
+

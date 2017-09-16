@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1345016502 source:/home/pawel/Desktop/Jezyk c++/r13,3/usedma.cpp
+	<iostream>
+	"dma.h"
+
+1504265820 /home/pawel/Desktop/Jezyk c++/r13,3/dma.h
+	<iostream>
+
+1504284784 source:/home/pawel/Desktop/Jezyk c++/r13,3/dma.cpp
+	"dma.h"
+	<cstring>
+

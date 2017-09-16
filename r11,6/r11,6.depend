@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1503848515 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r11,6\main.cpp
+	"stonewt1.h"
+
+1503848566 c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r11,6\stonewt1.h
+	<iostream>
+
+1503848385 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r11,6\stonewt1.cpp
+	<iostream>
+	"stonewt1.h"
+

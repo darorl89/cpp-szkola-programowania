@@ -1,0 +1,21 @@
+#ifndef LIST_H_INCLUDED
+#define LIST_H_INCLUDED
+class List
+{
+    static const int LISTMAX = 10;
+    string elements[10];
+public:
+    List(string input[], int n)
+    {
+        for (int i = 0; i < n; ++i)
+        {
+            elements[i] = input[i];
+        }
+    }
+    List(string input)
+    {
+        elements[0] = input;
+    }
+    
+};
+#endif // LIST_H_INCLUDED

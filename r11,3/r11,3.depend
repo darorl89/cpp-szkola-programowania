@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1345020104 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r11,3\vect.cpp
+	<cmath>
+	"vect.h"
+
+1345020104 c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r11,3\vect.h
+	<iostream>
+
+1503842152 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r11,3\randwalk.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	"vect.h"
+

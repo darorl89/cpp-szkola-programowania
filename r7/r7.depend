@@ -1,0 +1,31 @@
+# depslib dependency file v1.0
+1503048733 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r7\ps8.cpp
+	<iostream>
+
+1503051716 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r7\cp1.cpp
+	<iostream>
+
+1503087874 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r7\cp5.cpp
+	<iostream>
+
+1503091813 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r7\cp8.cpp
+	<iostream>
+	<array>
+	<string>
+
+1503136909 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r7\cp9.cpp
+	<iostream>
+
+1503138864 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r7\cp10.cpp
+	<iostream>
+
+1503233574 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r7\makestr.cpp
+	<iostream>
+
+1503235178 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r7\coordinates.cpp
+	<iostream>
+	<cmath>
+
+1503249219 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r7\ruler.cpp
+	<iostream>
+

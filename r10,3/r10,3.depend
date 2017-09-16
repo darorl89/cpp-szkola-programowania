@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1503746961 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r10,3\golf.cpp
+	"golf.h"
+
+1503747079 c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r10,3\golf.h
+	<cstring>
+	<iostream>
+
+1503746975 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r10,3\main.cpp
+	<iostream>
+	"golf.h"
+

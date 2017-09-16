@@ -1,0 +1,12 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    Person one;
+    Person two("Staszek");
+    Person three("Jacek", "Placek");
+    o
+    return 0;
+}

@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1504291516 source:/home/pawel/Desktop/Jezyk c++/r13,4/main.cpp
+	<iostream>
+	"wine.h"
+
+1504291370 source:/home/pawel/Desktop/Jezyk c++/r13,4/wine.cpp
+	"wine.h"
+
+1504291181 /home/pawel/Desktop/Jezyk c++/r13,4/wine.h
+	<cstring>
+	<iostream>
+
+1504356213 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r13,4\main.cpp
+	<iostream>
+	"wine.h"
+
+1504265864 c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r13,4\wine.h
+	<cstring>
+	<iostream>
+
+1504265864 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r13,4\wine.cpp
+	"wine.h"
+

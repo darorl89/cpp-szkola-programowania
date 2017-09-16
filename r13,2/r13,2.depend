@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1504254777 source:/home/pawel/Desktop/Jezyk c++/r13,2/cd.cpp
+	"cd.h"
+
+1504254739 /home/pawel/Desktop/Jezyk c++/r13,2/cd.h
+	<iostream>
+	<cstring>
+

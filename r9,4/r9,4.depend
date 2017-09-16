@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1503526274 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r9,4\main.cpp
+	<iostream>
+	"sales.h"
+
+1503525675 c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r9,4\sales.h
+
+1503526501 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r9,4\sales.cpp
+	"sales.h"
+	<iostream>
+

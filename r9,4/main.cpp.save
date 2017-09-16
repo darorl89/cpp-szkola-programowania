@@ -1,0 +1,10 @@
+#include <iostream>
+#include "sales.h"
+
+int main()
+{
+    Sales::Sales sale;
+    Sales::setSales(sale);
+    Sales::showSales(sale);
+    return 0;
+}

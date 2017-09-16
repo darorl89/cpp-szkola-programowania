@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1504028958 source:/home/pawel/Desktop/Jezyk c++/r12,2/main.cpp
+	<string2.h>
+	<iostream>
+
+1504028694 source:/home/pawel/Desktop/Jezyk c++/r12,2/string1.cpp
+	<cstring>
+	"string1.h"
+	<cctype>
+
+1504028244 /home/pawel/Desktop/Jezyk c++/r12,2/string1.h
+	<iostream>
+

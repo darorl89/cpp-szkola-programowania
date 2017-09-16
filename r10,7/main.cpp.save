@@ -1,0 +1,11 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    Plorg one;
+    Plorg two("Zlamas", 70);
+    two.s
+    return 0;
+}

@@ -1,0 +1,13 @@
+#include <iostream>
+#include "BankBill.h"
+
+using namespace std;
+
+int main()
+{
+    BankBill bill1("Kawula", "e23", 20);
+    bill1.showBill();
+    bill1.subtractBalance()
+    std::cout << "Hello world!" << std::endl;
+    return 0;
+}
