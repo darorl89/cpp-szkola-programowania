@@ -3,12 +3,14 @@
 
 #include <iostream>
 #include <valarray>
+#include <cstring>
 
 using std::cout;
 using std::endl;
+using std::string;
+using std::cin;
 
-//typedef std::valarray<int> ArrayInt;
-//typedef Pair<ArrayInt,ArrayInt> PairArray;
+
 template<typename T1, typename T2>
 class Pair
 {
@@ -28,31 +30,74 @@ T1 & Pair<T1,T2>::first() {return a;}
 template<typename T1, typename T2>
 T2 & Pair<T1,T2>::second() {return b;}
 
-/*class Wine
+typedef std::valarray<int> ArrayInt;
+typedef Pair<ArrayInt,ArrayInt> PairArray;
+
+class Wine
 {
-    string name;
+    string label;
+    int year;
     PairArray pa;
+    Wine & operator=(const Wine &);
+    Wine(const Wine &);
 public:
     Wine(const char * l, int y, const int yr[], const int bot[]);
-    Wine(const char * l, int y);
-
+    Wine(const char * l = "Undef", int y = 0);
+    void GetBottles ();
+    const string & Label() const {return label;}
+    int Sum() const;
+    void Show() const;
 };
 
-void Pair::show() const
+Wine::Wine(const char * l, int y, const int yr[], const int bot[]) : label(l), year(y)
 {
-    cout << "Rocznik: " << year << ", ilosc: " << count << endl;
+    for (int i = 0; i < y; ++i)
+    {
+        pa.first()[i] = yr[i];
+        pa.second()[i] = bot[i];
+    }
 }
 
-ostream & operator<<(ostream & os, Pair & p)
+Wine::Wine(const char* l , int y ) : label(l), year(y)
 {
-    os << year << ", " << count;
+    for (int i = 0; i < year; ++i)
+    {
+        pa.first()[i] = 0;
+        pa.second()[i] = 0;
+    }
 }
 
-void change()
+void Wine::GetBottles()
 {
-    cout << "Podaj rocznik";
-    cin >> year;
-    cout << "Podaj ilosc: ";
-    cin >> count;
-}*/
+    cout << "Podaj dane o winie " << label << " dla " << year << " rocznikow: " << endl;
+    int y;
+    int c;
+    for (int i = 0; i < year; ++i)
+    {
+        cout << "Podaj rocznik: ";
+        cin >> y;
+        pa.first()[i] = y;
+        cout << "Podaj liczbe butelek: ";
+        cin >> c;
+        pa.second()[i] = c;
+    }
+}
+
+int Wine::Sum() const
+{
+    return pa.second().sum();
+}
+
+void Wine::Show() const
+{
+    cout << "Wino: " << label << endl;
+    cout << "\t \t Rocznik \t Butelki" << endl;
+    for (int i = 0; i < year; ++i)
+    {
+        int o = pa.first()[i];
+        int s = pa.second()[i];
+        cout << o << "\t" << s << endl;
+    }
+}
+
 #endif // WINE_H_INCLUDED

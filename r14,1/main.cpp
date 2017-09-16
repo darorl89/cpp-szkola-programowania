@@ -1,20 +1,29 @@
 #include <iostream>
 #include "wine.h"
 
-using namespace std;
-
 int main()
 {
-    Pair<string,int> p1("a",2);
-    Pair<string,int> ratings[4] = {Pair<string,int>("Pod czerwonym baronem",2),Pair<string,int>("U jozka",5),Pair<string,int>("U stasia",1),Pair<string,int>("U pawla",10)};
-    cout << "Oto restauracje: " << endl;
-    for (int i = 0; i < 4; ++i)
-    {
-        cout << ratings[i].first() << "; " << ratings[i].second() << endl;
-    }
+    using std::cout;
+    using std::cin;
+    using std::endl;
 
-    cout << "Uwaga, zmiana oceny: ";
-    ratings[3].second() = 11;
-    cout << ratings[3].first() << "; " << ratings[3].second() << endl;
+    cout << "Podaj nazwe wina: ";
+    char lab[50];
+    cin.getline(lab, 50);
+    cout << "Podaj liczbe rocznikow: ";
+    int yrs;
+    cin >> yrs;
+    Wine holding(lab,yrs);
+    holding.GetBottles();
+    holding.Show();
+    const int YRS = 3;
+    int y[YRS] = { 1993, 1995, 1998};
+    int b[YRS] = { 48, 70, 72};
+
+    Wine more("Gushing Grape Red", YRS, y, b);
+    more.Show();
+    cout << "Laczna liczba butelek wina " << more.Label() << ": " << more.Sum() << endl;
+    cout << "Koniec\n";
+
     return 0;
 }
