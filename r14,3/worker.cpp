@@ -5,7 +5,7 @@ using std::cin;
 using std::endl;
 
 //metody klasy Worker
-Worker::~Worker() {}
+//Worker::~Worker() {}
 //metody chronione
 void Worker::Data() const
 {

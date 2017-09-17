@@ -17,7 +17,6 @@ public:
         : fullname("brak"), id(0L) {}
     Worker(const std::string & s, long n)
         : fullname(s), id(n) {}
-    virtual ~Worker() = 0; //funkcja czysto wirtualna
     virtual void Set() = 0;
     virtual void Show() const = 0;
 };

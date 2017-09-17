@@ -4,17 +4,17 @@
 	<cstring>
 	"worker.h"
 
-1505669609 c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r14,3\queuetp.h
+1505669826 c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r14,3\queuetp.h
 	<string>
 	<iostream>
 	<cstdlib>
 
-1505669691 c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r14,3\worker.h
+1505669927 c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r14,3\worker.h
 	<iostream>
 	<iostream>
 	<string>
 
-1505645101 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r14,3\worker.cpp
+1505669944 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r14,3\worker.cpp
 	"worker.h"
 	<iostream>
 
