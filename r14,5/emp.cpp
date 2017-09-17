@@ -10,7 +10,7 @@ void Abstr_emp::showAll() const
 {
     std::cout << "Imie: " << fname << std::endl
     << "Nazwisko: " << lname << std::endl
-    << "Praca: " << job << std::endl;
+    << "Praca: " << job;
 }
 
 void Abstr_emp::setAll()
@@ -52,7 +52,7 @@ Manager::Manager(const Manager & m) : Abstr_emp(m), inchargeof(m.inchargeof) {}
 void Manager::showAll() const
 {
     Abstr_emp::showAll();
-    std::cout
+    std::cout << std::endl
     << "Dowodzi: " << inchargeof;
 }
 
@@ -76,7 +76,8 @@ Fink::Fink(const Fink & e) : Abstr_emp(e), reportsto(e.reportsto) {}
 void Fink::showAll() const
 {
     Abstr_emp::showAll();
-    std::cout << "Raportuje do: " << reportsto;
+    std::cout << std::endl
+    << "Raportuje do: " << reportsto;
 }
 
 void Fink::setAll()
@@ -103,9 +104,9 @@ Highfink::Highfink(const Highfink& h) : Abstr_emp(h), Manager(h), Fink(h) {}
 void Highfink::showAll() const
 {
     Abstr_emp::showAll();
-    std::cout << "Dowodzi: " << Manager::inChargeOf() << std::endl
-    << "Raportuje do: " << std::endl
-    << Fink::reportsTo();
+    std::cout << std::endl
+    << "Dowodzi: " << Manager::inChargeOf() << std::endl
+    << "Raportuje do: " << Fink::reportsTo();
 }
 
 void Highfink::setAll()
