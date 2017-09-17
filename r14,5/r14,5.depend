@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1505668702 source:c:\users\p4wos\desktop\r14,5\main.cpp
+	<iostream>
+	"emp.h"
+	<iostream>
+
+1505668660 c:\users\p4wos\desktop\r14,5\emp.h
+	<iostream>
+	<string>
+
+1505668930 source:c:\users\p4wos\desktop\r14,5\emp.cpp
+	"emp.h"
+
