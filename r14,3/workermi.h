@@ -1,8 +1,5 @@
-#ifndef WORKER_H_INCLUDED
-#define WORKER_H_INCLUDED
-#include <iostream>
-#include <iostream>
-#include <string>
+#ifndef WORKERMI_H_INCLUDED
+#define WORKERMI_H_INCLUDED
 
 class Worker
 {
@@ -80,4 +77,4 @@ public:
     void Show() const;
 };
 
-#endif // WORKER_H_INCLUDED
+#endif // WORKERMI_H_INCLUDED

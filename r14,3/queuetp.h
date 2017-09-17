@@ -1,77 +1,111 @@
-#ifndef QUEUETP_H_INCLUDED
-#define QUEUETP_H_INCLUDED
+#ifndef QUEUETP_H_
+#define QUEUETP_H_
+#include <string>
+#include <iostream>
+#include <cstdlib>
 
-template<typename T>
-class QueueTp
+
+template <typename Item>
+class QueueTP
 {
-    struct Node {T item; Node * next;};
-    const int qsize;
-    int items;
-    Node * front;
-    Node * rear;
-    QueueTp(const QueueTp & q) : qsize(0) {}
-    QueueTp & operator=(const QueueTp & q) {return *this;}
+protected:
+    //definicje zasiegu klasy
+    //Node to definicja zagnie¿d¿ona klasy, lokalna wzglêdem tej klasy
+    struct Node { Item item; struct Node * next; };
+    //prywatne sk³adowe klasy
+    Node * front;       //wskaŸnik czo³a kolejki
+    Node * rear;        //wskaŸnik ogona kolejki
+    int items;          //bie¿¹ca liczba elementów
+    const int qsize;    //maksymalna liczba elementów kolejki
+                        //definicje blokuj¹ce publiczny dostêp do operacji kopiowania
+    //QueueTP(const QueueTP & q) : qsize(0) {}
+    //QueueTP & operator=(const QueueTP & q) { return *this; }
 public:
-    QueueTp(int qs = 3);
-    ~QueueTp();
-    bool isfull() const;
+
+    QueueTP(int qs);            //tworzy kolejkê o pojemnoœci qs
+    virtual ~QueueTP();
     bool isempty() const;
-    bool enqueue(const T & item);
-    bool dequeue(T & item);
+    bool isfull() const;
+    int  queuecount() const;
+    bool enqueue(const Item &item); //dodaje element na koniec kolejki
+    bool dequeue(Item & item);      //wyci¹ga element z czo³a kolejki
+    bool operator>(const QueueTP & l)
+    {
+        if (this->items > l.items)
+            return true;
+
+        return false;
+    }
 };
 
-template<typename T>
-QueueTp<T>::QueueTp(int qs) : qsize(qs), front(nullptr), rear(nullptr), items(0) {}
-
-template<typename T>
-QueueTp<T>::~QueueTp()
+//metody klasy Queue
+template <typename Item>
+QueueTP<Item>::QueueTP(int qs) : qsize(qs)
+{
+    front = rear = nullptr;
+    items = 0;
+}
+template <typename Item>
+QueueTP<Item>::~QueueTP()
 {
     Node * temp;
-    while (front != nullptr)
+    while (front != NULL)   //do wyczerpania kolejki
     {
-        temp = front;
-        front = front->next;
-        delete temp;
+        temp = front;       //zachowanie adresu elementu bie¿¹cego
+        front = front->next; //przesuniêcie wskaŸnika do elementu nastêpnego
+        delete temp;        //zwolnienie elementu spod zapamiêtanego adresu
     }
 }
-
-template<typename T>
-bool QueueTp<T>::isfull() const
-{
-    return items == qsize;
-}
-template<typename T>
-bool QueueTp<T>::isempty() const
+template <typename Item>
+bool QueueTP<Item>::isempty() const
 {
     return items == 0;
 }
-template <typename T>
-bool QueueTp<T>::enqueue(const T & item)
+template <typename Item>
+bool QueueTP<Item>::isfull() const
+{
+    return items == qsize;
+}
+template <typename Item>
+int QueueTP<Item>::queuecount() const
+{
+    return items;
+}
+
+//dodaje element do kolejki
+template <typename Item>
+bool QueueTP<Item>::enqueue(const Item &item)
 {
     if (isfull())
         return false;
-    Node * add = new Node;
-    add->item = item;
+    Node * add = new Node;      //utworzenie wêz³a
+                                //w przypadku niepowodzenia przydzia³u new zrzudzi wyj¹tek na std::bad_alloc
+    add->item = item;            //ustawienie wskaŸników wêz³ów
     add->next = nullptr;
     ++items;
-    if (isempty())
-        front = add;
+    if (front == NULL)          //jeœli kolejka pusta
+        front = add;            //umieœæ element na czele listy
     else
-        rear->next = add;
+        rear->next = add;        //w przeciwnym wypadku do³¹cz do koñca
+    rear = add;                 //rear wskazuje teraz nowy wêze³
+
     return true;
 }
-template <typename T>
-bool QueueTp<T>::dequeue(T & item)
+
+//kopiuje element czo³owy kolejki do argumentu wywo³ania i usuwa go z kolejki
+template <typename Item>
+bool QueueTP<Item>::dequeue(Item & item)
 {
-    if(isempty())
+    if (front == NULL)
         return false;
-    item = front->item;
+    item = front->item;          //skopiowanie do item pierwszego elementu
     --items;
-    Node * temp = front;
-    front = front->next;
-    delete temp;
-    if (isempty())
-        rear = nullptr;
+    Node * temp = front;        //zachowanie po³o¿enia pierwszego elementu
+    front = front->next;     //przestawienie wskaŸnika front na nastêpny element
+    delete temp;                //usuniêcie dotychczasowego pierwszego elementu
+    if (items == 0)
+        rear = NULL;
     return true;
 }
-#endif // QUEUETP_H_INCLUDED
+
+#endif

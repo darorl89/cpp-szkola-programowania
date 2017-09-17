@@ -1,11 +1,22 @@
 # depslib dependency file v1.0
-1505595759 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r14,3\main.cpp
-	<iostream>
-	"queuetp.h"
+1505653673 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r14,3\main.cpp
+	"QueueTP.h"
+	<cstring>
 	"worker.h"
 
-1505595825 c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r14,3\queuetp.h
-
-1505595558 c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r14,3\worker.h
+1505653776 c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r14,3\queuetp.h
+	<string>
 	<iostream>
+	<cstdlib>
+
+1505648387 c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r14,3\worker.h
+	<iostream>
+	<iostream>
+	<string>
+
+1505645101 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r14,3\worker.cpp
+	"worker.h"
+	<iostream>
+
+1505644618 c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r14,3\workermi.h
 
