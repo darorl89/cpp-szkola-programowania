@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1505662616 source:c:\users\p4wos\desktop\r14,4\main.cpp
+	<iostream>
+	<cstring>
+	<cstdlib>
+	<ctime>
+	"person.h"
+
+1505662609 c:\users\p4wos\desktop\r14,4\person.h
+	<iostream>
+	<ctime>
+	<random>
+
