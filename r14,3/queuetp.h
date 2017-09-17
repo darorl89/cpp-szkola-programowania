@@ -8,11 +8,12 @@
 template <typename Item>
 class QueueTP
 {
-private:
+protected:
     //definicje zasiegu klasy
     //Node to definicja zagniezdzona klasy, lokalna wzgledem tej klasy
     struct Node { Item item; struct Node * next; };
     //prywatne skladowe klasy
+private:
     Node * front;       //wskaznik czola kolejki
     Node * rear;        //wskaznik ogona kolejki
     int items;          //biezaca liczba elementów
@@ -21,7 +22,7 @@ private:
     //QueueTP(const QueueTP & q) : qsize(0) {}
     //QueueTP & operator=(const QueueTP & q) { return *this; }
 public:
-    QueueTP(int qs);            //tworzy kolejke o pojemnozci qs
+    QueueTP(int qs);            //tworzy kolejke o pojemnosci qs
     virtual ~QueueTP();
     bool isempty() const;
     bool isfull() const;
