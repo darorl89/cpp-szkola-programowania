@@ -48,7 +48,7 @@ protected:
     virtual void Data() const;
     virtual void Get();
 private:
-    static const char *pv[Vtypes];  //odpowiednik skali g³osu w postaci ci¹gu znaków
+    static const char *pv[Vtypes];  //odpowiednik skali glosu w postaci ciagu znaków
     int voice;
 public:
     Singer()

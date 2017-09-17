@@ -8,27 +8,26 @@
 template <typename Item>
 class QueueTP
 {
-protected:
+private:
     //definicje zasiegu klasy
-    //Node to definicja zagnie¿d¿ona klasy, lokalna wzglêdem tej klasy
+    //Node to definicja zagniezdzona klasy, lokalna wzgledem tej klasy
     struct Node { Item item; struct Node * next; };
-    //prywatne sk³adowe klasy
-    Node * front;       //wskaŸnik czo³a kolejki
-    Node * rear;        //wskaŸnik ogona kolejki
-    int items;          //bie¿¹ca liczba elementów
+    //prywatne skladowe klasy
+    Node * front;       //wskaznik czola kolejki
+    Node * rear;        //wskaznik ogona kolejki
+    int items;          //biezaca liczba elementów
     const int qsize;    //maksymalna liczba elementów kolejki
-                        //definicje blokuj¹ce publiczny dostêp do operacji kopiowania
+                        //definicje blokujace publiczny dostep do operacji kopiowania
     //QueueTP(const QueueTP & q) : qsize(0) {}
     //QueueTP & operator=(const QueueTP & q) { return *this; }
 public:
-
-    QueueTP(int qs);            //tworzy kolejkê o pojemnoœci qs
+    QueueTP(int qs);            //tworzy kolejke o pojemnozci qs
     virtual ~QueueTP();
     bool isempty() const;
     bool isfull() const;
     int  queuecount() const;
     bool enqueue(const Item &item); //dodaje element na koniec kolejki
-    bool dequeue(Item & item);      //wyci¹ga element z czo³a kolejki
+    bool dequeue(Item & item);      //wyciaga element z czola kolejki
     bool operator>(const QueueTP & l)
     {
         if (this->items > l.items)
@@ -51,9 +50,9 @@ QueueTP<Item>::~QueueTP()
     Node * temp;
     while (front != NULL)   //do wyczerpania kolejki
     {
-        temp = front;       //zachowanie adresu elementu bie¿¹cego
-        front = front->next; //przesuniêcie wskaŸnika do elementu nastêpnego
-        delete temp;        //zwolnienie elementu spod zapamiêtanego adresu
+        temp = front;       //zachowanie adresu elementu biezacego
+        front = front->next; //przesuniecie wskaznika do elementu nastepnego
+        delete temp;        //zwolnienie elementu spod zapamietanego adresu
     }
 }
 template <typename Item>
@@ -78,21 +77,21 @@ bool QueueTP<Item>::enqueue(const Item &item)
 {
     if (isfull())
         return false;
-    Node * add = new Node;      //utworzenie wêz³a
-                                //w przypadku niepowodzenia przydzia³u new zrzudzi wyj¹tek na std::bad_alloc
-    add->item = item;            //ustawienie wskaŸników wêz³ów
+    Node * add = new Node;      //utworzenie wezla
+                                //w przypadku niepowodzenia przydzialu new zrzudzi wyjatek na std::bad_alloc
+    add->item = item;            //ustawienie wskazników wezlów
     add->next = nullptr;
     ++items;
-    if (front == NULL)          //jeœli kolejka pusta
-        front = add;            //umieœæ element na czele listy
+    if (front == NULL)          //jezli kolejka pusta
+        front = add;            //umiezæ element na czele listy
     else
-        rear->next = add;        //w przeciwnym wypadku do³¹cz do koñca
-    rear = add;                 //rear wskazuje teraz nowy wêze³
+        rear->next = add;        //w przeciwnym wypadku dolacz do koñca
+    rear = add;                 //rear wskazuje teraz nowy wezel
 
     return true;
 }
 
-//kopiuje element czo³owy kolejki do argumentu wywo³ania i usuwa go z kolejki
+//kopiuje element czolowy kolejki do argumentu wywolania i usuwa go z kolejki
 template <typename Item>
 bool QueueTP<Item>::dequeue(Item & item)
 {
@@ -100,9 +99,9 @@ bool QueueTP<Item>::dequeue(Item & item)
         return false;
     item = front->item;          //skopiowanie do item pierwszego elementu
     --items;
-    Node * temp = front;        //zachowanie po³o¿enia pierwszego elementu
-    front = front->next;     //przestawienie wskaŸnika front na nastêpny element
-    delete temp;                //usuniêcie dotychczasowego pierwszego elementu
+    Node * temp = front;        //zachowanie polozenia pierwszego elementu
+    front = front->next;     //przestawienie wskaznika front na nastepny element
+    delete temp;                //usuniecie dotychczasowego pierwszego elementu
     if (items == 0)
         rear = NULL;
     return true;
