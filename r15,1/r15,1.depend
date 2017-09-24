@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1506196752 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r15,1\main.cpp
+	<iostream>
+	"remotetv.h"
+
+1506271844 c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r15,1\remotetv.h
+
+1506195585 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r15,1\remotetv.cpp
+	<iostream>
+	"remotetv.h"
+
