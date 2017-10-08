@@ -1,10 +1,10 @@
 # depslib dependency file v1.0
-1506273292 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r15,2\error4.cpp
+1507215270 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r15,2\error4.cpp
 	<iostream>
 	<cmath>
 	"exc_mean.h"
 
-1506273237 c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r15,2\exc_mean.h
+1507458515 c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r15,2\exc_mean.h
 	<iostream>
 	<stdexcept>
 

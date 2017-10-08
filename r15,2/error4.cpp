@@ -26,13 +26,13 @@ int main()
         }   // koniec bloku try
         catch (bad_hmean & bg)   // poczatek bloku catch
         {
-            bg.what();
+            cout << bg.what();
             cout << "Sprobuj ponownie.\n";
             continue;
         }
         catch (bad_gmean & hg)
         {
-            hg.what();
+            cout << hg.what();
             cout << "Uzyte wartosci: " << hg.v1 << ", "
                 << hg.v2 << endl;
             cout << "Niestety, to koniec zabawy.\n";
