@@ -32,22 +32,23 @@ int main() {
 
     int count = 0;
     cout << "Wspaniali sponsorzy: "<<endl;
-    for(int i = 0 ; i < payers; i++){
+    for(int i = 0 ; i < payers; ++i){
         if(p_payer[i].amount >= 10000){
             cout << p_payer[i].amount << " - " << p_payer[i].name << endl;
-            count++;
+            ++count;
         }
     }
-    if(!count)
-        cout << "Brak";
-        cout << "Nasi sponsorzy: "<<endl;
-    for(int i = 0 ; i < payers; i++){
+    cout << "Nasi sponsorzy: "<<endl;
+    if(count)
+        for(int i = 0 ; i < payers; ++i){
             cout << p_payer[i].amount << " - " << p_payer[i].name << endl;
-            count++;
+            ++count;
         }
-    delete [] p_payer;
-    if(!count)
+    else
         cout << "Brak";
+
+
+    delete [] p_payer;
     return 0;
 }
 
