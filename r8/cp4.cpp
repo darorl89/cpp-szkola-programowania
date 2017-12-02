@@ -32,18 +32,11 @@ void set_str(stringy & str,const char * pchar){
 }
 
 void show(const stringy & str,int n){
-    for(int i = 0; i < n; ++i){
-        for(int j = 0; j < str.ct; j++){
-            cout << str.str[j];
-        }
-    }
+    for(int i = 0; i < n; ++i)
+        cout << str.str;
 }
 
 void show(const char input[], int n){
-    int j = 0;
     for (int i = 0; i < n; ++i)
-        while(input[j] != '\0'){
-            cout << input[j];
-            ++j;
-        }
+            cout << input;
 }

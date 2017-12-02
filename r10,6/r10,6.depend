@@ -1,11 +1,11 @@
 # depslib dependency file v1.0
-1503757642 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r10,6\main.cpp
+1503754042 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r10,6\main.cpp
 	<iostream>
 	"Move.h"
 
-1503757522 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r10,6\move.cpp
+1503753922 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r10,6\move.cpp
 	"Move.h"
 
-1503757487 c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r10,6\move.h
+1503753887 c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r10,6\move.h
 	<iostream>
 

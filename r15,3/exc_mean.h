@@ -10,7 +10,7 @@ class bad_mean : public std::logic_error
 public:
     double getv1() const { return v1;}
     double getv2() const { return v2;}
-    bad_mean(double a = 0, double b = 0) : std::logic_error("Inappropriate function arguments for average"), v1(a), v2(b) { }
+    bad_mean(double a = 0, double b = 0) : std::logic_error("Inappropriate function arguments for mean"), v1(a), v2(b) { }
     virtual const char * what() { return logic_error::what();}
 };
 

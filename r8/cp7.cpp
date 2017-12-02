@@ -1,4 +1,4 @@
-// tempover.cpp -- przeci¹¿anie szablonów
+// tempover.cpp -- przeciazanie szablonów
 #include <iostream>
 
 template <typename T>            // szablon A
@@ -31,16 +31,16 @@ int main()
     };
     double * pd[3];
 
-// ustawienie wskaŸników na pola amount struktur z tablicy Mr_E
+// ustawienie wskazników na pola amount struktur z tablicy Mr_E
     for (int i = 0; i < 3; i++)
         pd[i] = &mr_E[i].amount;
 
     cout << "Wyliczanie rzeczy pana E.:\n";
 // things to tablica int
-ShowArray(things, 6);  // u¿ywamy szablonu A
+ShowArray(things, 6);  // uzywamy szablonu A
     cout << "Wyliczanie dlugow pana E:\n";
-// pd to tablica wskaŸników na double
-    ShowArray(pd, 3);      // u¿ywa szablonu B (bardziej wyspecjalizowanego)
+// pd to tablica wskazników na double
+    ShowArray(pd, 3);      // uzywa szablonu B (bardziej wyspecjalizowanego)
     cout << SumArray(things,6);
     cout << SumArray(pd,3);
     return 0;

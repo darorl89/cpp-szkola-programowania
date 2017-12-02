@@ -1,5 +1,6 @@
 #ifndef SALES_H_INCLUDED
 #define SALES_H_INCLUDED
+#include <array>
 namespace Sales
 {
     const int QUARTERS = 4;

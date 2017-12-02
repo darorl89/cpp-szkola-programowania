@@ -29,31 +29,7 @@ string makestr(string str,char ch, int signs)
 void setgolf(golf & g, const char * name, int hc)
 {
 
-    if(name == '\0')
-    {
-        cout << "Pusty parametr w konstruktorze (nazwisko)" << endl << "Podaj prawidlowy parametr: ";
-
-        while(!(cin.get(g.fullname,cLen)))
-        {
-            cin.clear();
-            cin.ignore();
-            cout << "Podaj prawidlowy parametr: ";
-        }
-    }
-    else
-    {
-        strncpy(g.fullname,name,40);
-    }
-    if(hc <= 0 || !hc)
-    {
-        cout << "Zly handicap w konstruktorze, podaj prawidlowy: ";
-        while(!(cin >> hc) || hc <= 0 || hc == '\0')
-        {
-            cin.clear();
-            cin.ignore();
-            cout << "Podaj prawidlowy handicap: ";
-        }
-    }
+    strncpy(g.fullname,name,cLen);
     g.handicap = hc;
     g.fullname[0] = toupper(g.fullname[0]);
 }
@@ -61,9 +37,9 @@ void setgolf(golf & g, const char * name, int hc)
 void setgolf(golf & g)
 {
     cout << "Podaj nazwisko: ";
-    if(!(cin.get(g.fullname,40)))
+    if(!(cin.get(g.fullname,cLen)))
     {
-        while(!(cin.get(g.fullname,40)))
+        while(!(cin.get(g.fullname,cLen)))
         {
             cin.clear();
             cin.ignore();
@@ -73,11 +49,11 @@ void setgolf(golf & g)
     cout << "Podaj handicap: ";
     if(g.handicap >= 0 || !(cin >> g.handicap))
     {
-        while(!(cin >> g.handicap) || g.handicap <= 0)
+        while(!(cin >> g.handicap) || g.handicap < 0)
         {
             cin.clear();
             cin.ignore();
-            cout << "Handicap nie moze byc ani pusty ani ujemny: ";
+            cout << "Handicap nie moze byc rowny 0 ani ujemny: ";
         }
     }
     g.fullname[0] = toupper(g.fullname[0]);
@@ -85,7 +61,7 @@ void setgolf(golf & g)
 
 void deletegolf(golf & g)
 {
-    strncpy(g.fullname,"",40);
+    strncpy(g.fullname,"",cLen);
     g.handicap = 0;
 }
 
@@ -112,23 +88,25 @@ void showgolf(const golf & g)
 
 void showall(const golf g[],int tSize)
 {
+    bool any_player = false;
     cout << "Oto nasi zawodnicy: " << endl;
-    int i;
     int count = 0;
-    for (i = 0; i < tSize; ++i)
+    for (int i = 0; i < tSize; ++i)
     {
-        if(strcmp(g[i].fullname,""))
-        {
-            if(i == 0)
-                makestr('-',20);
-            cout << i+1 << ". " <<  g[i].fullname << ", " << g[i].handicap << endl;
-            ++count;
-        }
+        if(g[i].handicap != 0)
+            any_player = true;
+        if(any_player == false)
+            continue;
+        cout << i+1 << ". " <<  g[i].fullname << ", " << g[i].handicap << endl;
+        if(g[i+1].fullname != "")
+            makestr('-',20);
+        ++count;
     }
+
     if(count == 0)
+    {
         cout << "Brak." << endl;
-    else
-        makestr('-',20);
+    }
 }
 
 bool menu(golf g[], int tSize)
@@ -167,6 +145,7 @@ bool menu(golf g[], int tSize)
     break;
     case 3:
         showall(ptable,tSize);
+    break;
     case 4:
         return false;
     }

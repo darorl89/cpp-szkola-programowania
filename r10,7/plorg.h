@@ -8,7 +8,9 @@ using std::endl;
 
 class Plorg
 {
+public:
     static const int NAMEMAX = 19;
+private:
     char name[NAMEMAX];
     int fulness;
 public:

@@ -7,8 +7,9 @@ using std::cin;
 
 int main()
 {
-    Golf g;
-    Golf copyg;
+    Golf g("Pawel",23);
+    Golf copyg("kaw",21);
     copyg = g;
+    copyg.showgolf();
     return 0;
 }

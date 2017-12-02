@@ -1,13 +1,14 @@
 #ifndef STACK_H_INCLUDED
 #define STACK_H_INCLUDED
-
+#include <cstring>
 #include <iostream>
+
 using std::cout;
 using std::endl;
 using std::cin;
 using std::string;
 using std::getline;
-#include <cstring>
+
 const int NAMEMAX = 35;
 struct customer
 {

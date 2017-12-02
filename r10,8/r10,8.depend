@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1512151326 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r10,8\main.cpp
+	<iostream>
+	"list.h"
+
+1512151239 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r10,8\list.cpp
+	"list.h"
+
+1512150959 c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r10,8\list.h
+	<string>
+	<iostream>
+

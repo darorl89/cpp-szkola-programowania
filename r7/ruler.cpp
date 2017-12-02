@@ -13,8 +13,7 @@ int main()
     ruler[x-2] = ruler[0] = '|';
     for (int i = 1; i < x - 2; ++i)
         ruler[i] = ' ';
-    cout << ruler << endl;
-    for (int i = 1; i < y; ++i){
+    for (int i = 1; i <= y; ++i){
         subdivide(ruler,0,x-2,i);
         cout << ruler << endl;
     }

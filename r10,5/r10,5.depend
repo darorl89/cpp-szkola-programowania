@@ -1,11 +1,11 @@
 # depslib dependency file v1.0
-1503756789 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r10,5\main.cpp
+1503753189 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r10,5\main.cpp
 	"stack.h"
 
-1503752452 c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r10,5\stack.h
-	<iostream>
+1512068838 c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r10,5\stack.h
 	<cstring>
+	<iostream>
 
-1503756694 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r10,5\stack.cpp
+1512068917 source:c:\users\p4wos\desktop\jêzyk c++ szko³a programowania\r10,5\stack.cpp
 	"stack.h"
 

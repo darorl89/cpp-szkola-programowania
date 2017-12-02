@@ -33,7 +33,6 @@
 			<Add option="-fexceptions" />
 			<Add option="-std=c++14" />
 		</Compiler>
-		<Unit filename="chaff.cpp" />
 		<Unit filename="chaff.h" />
 		<Unit filename="main.cpp" />
 		<Extensions>

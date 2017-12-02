@@ -8,7 +8,7 @@ int main()
     int number;
     for (int i = 0; i < 10; ++i)
     {
-        number = (std::rand() * 10.0 / RAND_MAX < 1);
+        number = (std::rand());
             std::cout << number << std::endl;
     }
     return 0;

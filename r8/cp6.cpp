@@ -7,7 +7,7 @@ template <> const char* maxn<const char*>(const char* tab[], int tabSize);
 int main()
 {
     int tab[5] = {0,2,1,5,10};
-    cout << maxn(tab,5);
+    cout << maxn(tab,5) << endl;
     const char * ctab[7] = {"co","tam","u","ziom","cb","elo","ASDKAS"};
     cout << maxn(ctab,7);
     return 0;

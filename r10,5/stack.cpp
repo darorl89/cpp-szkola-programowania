@@ -2,11 +2,7 @@
 
 void Stack::addCustomer(const char* fname, double pay)
 {
-    if(customersLeft < 0)
-        customersLeft = 0;
-    strncpy(customers[customersLeft].fullname,"",NAMEMAX);
     strncpy(customers[customersLeft].fullname,fname,NAMEMAX);
-    customers[customersLeft].payment = 0;
     customers[customersLeft].payment = pay;
     ++customersLeft;
 }

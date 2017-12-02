@@ -5,7 +5,7 @@ using namespace std;
 
 int main()
 {
-    Move one;
+    Move one(3,32);
     Move two(1,10);
     Move three;
     three = one.add(two);

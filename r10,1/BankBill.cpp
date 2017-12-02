@@ -20,7 +20,7 @@ void BankBill::addBalance(double ab)
         std::cout << "Operacja przerwana" << std::endl;
     }
     else
-        balance -= ab;
+        balance += ab;
 }
 
 void BankBill::subBalance(double ab)

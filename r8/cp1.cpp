@@ -11,6 +11,7 @@ int main()
     show("Cos");
     show("Cos");
     show("Cos",1);
+    show("Cos",1);
     return 0;
 }
 
